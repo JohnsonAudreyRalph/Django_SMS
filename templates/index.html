@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Thay đổi mật khẩu</h2>
+    <form method="post" action="">
+        {% csrf_token %}
+        <label for="oop_code">Nhập mã OOP:</label>
+        <input type="text" id="oop_code" name="oop_code" required>
+        <label for="new_password">Mật khẩu mới: </label>
+        <input type="text" name="new_password" id="new_password" required>
+        <button type="submit">Thay đổi mật khẩu</button>
+    </form>
+</body>
+</html>
